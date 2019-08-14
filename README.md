@@ -1,5 +1,5 @@
 # Bookmarks Analyzer
 
-Check Chrome bookmakrs alive or dead.
+Check Chrome bookmark is alive or dead.
 
 ![icon](/icon.png)
