@@ -88,6 +88,7 @@
     link.textContent = bookmark.title
     link.title = bookmark.title 
     link.setAttribute('href', bookmark.url)
+    link.setAttribute('target', '_blank')
 
     status.className = `status status-${getStatus(bookmark.status)}`
     status.title = `${bookmark.status} ${bookmark.statusText ? bookmark.statusText : ''}`
