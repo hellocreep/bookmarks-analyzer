@@ -1,0 +1,18 @@
+.main {
+  height: 80px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-start {
+  padding: 10px;
+  font-size: 16px;
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+}

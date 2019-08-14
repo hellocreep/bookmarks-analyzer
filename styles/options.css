@@ -1,0 +1,124 @@
+#main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main.error1 .item.ok,
+#main.error1 .item.error2 {
+  display: none;
+}
+
+#main.error2 .item.ok,
+#main.error2 .item.error1 {
+  display: none;
+}
+
+#main.ok .item.error2,
+#main.ok .item.error1 {
+  display: none;
+}
+
+.item {
+  position: relative;
+  flex: 0 1 23%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 18px 8px 12px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(135, 135, 135, 0.3);
+}
+
+.link {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.status {
+  flex: 0 0 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.status-ok {
+  background-color: green;
+}
+
+.status-error1 {
+  background-color: yellow;
+}
+
+.status-error2 {
+  background-color: red;
+}
+
+.status-unknown {
+  background-color: gray;
+}
+
+.date, .archive {
+  position: absolute;
+  font-size: 12px;
+  top: 2px;
+  color: rgba(30, 30, 30, 0.3);
+}
+
+.date {
+  right: 10px;
+}
+
+.archive {
+  left: 10px;
+  text-decoration: none;
+}
+
+.archive:hover {
+  color: blueviolet;
+}
+
+.filter {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-item {
+  flex: 0 0 30px;
+  height: 30px;
+  border-radius: 30px;
+  transition: all .3s;
+}
+
+.filter-item + .filter-item {
+  margin-left: 20px;
+}
+
+.filter-item.active {
+  border: 3px solid blue;
+}
+
+.loading {
+  width: 30px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.count {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #ddd;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Bookmarks Analyzer",
+  "description" : "Analyze your bookmarks",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "bookmarks",
+    "webRequest",
+    "storage",
+    "<all_urls>"
+  ],
+  "options_page": "options.html"
+}
